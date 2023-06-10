@@ -74,10 +74,29 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #1e30f3;
-  --bs-link-hover-color: #1826c2;
+  --bs-link-color: #dd1d2a;
+  --bs-link-hover-color: #dd1d2a;
   --bs-code-color: #e21e80;
   --bs-highlight-bg: #fff3cd;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #dd1d2a00;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #dd1d2a;
+  /* color of the scroll thumb */
+  border-radius: 20px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #000000;
+  /* creates padding around scroll thumb */
 }
 
 *,
@@ -278,7 +297,6 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
 }
 
 a:hover {
