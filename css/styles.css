@@ -81,13 +81,9 @@
 }
 
 body::-webkit-scrollbar {
-  width: 12px;
+  width: 13px;
   /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: #dd1d2a00;
-  /* color of the tracking area */
+  overflow-y:hide;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -97,6 +93,7 @@ body::-webkit-scrollbar-thumb {
   /* roundness of the scroll thumb */
   border: 3px solid #000000;
   /* creates padding around scroll thumb */
+  overflow-y: hide;
 }
 
 *,
